@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <b>
+    <nav>
+        <h1>Welcome to No_Wahala Forecasts
+            <!-- <a href="https://www.weatherapi.com/" title="Free Weather API"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com" border="0"></a> -->
+        </h1>
+    </nav>
+    <!-- the input container -->
+            <div id="input-div">
+                <label for="input">Enter your City</label>
+                <input id="cityInput" type="text" placeholder="..." onselect="removeplaceholder">
+                <button id="display-button" onclick="fetchWeather()" onmouseover="changeColor()"><b>DISPLAY WEATHER</b></button>
+            </div>        
+                <!-- <div id="weatherapi-weather-widget-4"></div><script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=866885&wid=4&tu=2&div=weatherapi-weather-widget-4' async></script><noscript><a href="https://www.weatherapi.com/weather/q/tafo-866885" alt="Hour by hour Tafo weather">10 day hour by hour Tafo weather</a></noscript> -->
+
+<!-- the weather results are displayed here -->
+            <div id="weatherData">
+            </div>
+
+
+</b>        
+<footer>
+    <p>&copy;2024 NO_WAHALA INC. All rights reserved <br>
+        Powered by <a href="https://www.openWeatherMap.org/" title="Free Weather API">WeatherAPI.com</a>
+    </p>
+</footer>
+<script src="./server.js"></script>
+</body>
+</html>
